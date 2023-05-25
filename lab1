@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
 int a, n;
+cout « "Стручков Владислав РПИб-о22";
 cout « "Введите числа a и n: ";
 cin » a » n;
 
