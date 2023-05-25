@@ -1,21 +1,26 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
 int main() {
+
+SetConsoleCP(1251);
+SetConsoleOutputCP(1251);
+
 int a, n;
-cout « "Стручков Владислав РПИб-о22";
-cout « "Введите числа a и n: ";
-cin » a » n;
+cout << "Стручков Владислав РПИб-о22";
+cout << "Введите числа a и n: ";
+cin >> a >> n;
 
 int b = 1;
 while (b < n) {
 if ((a * b) % n == 1) {
-cout « "Обратный элемент к числу " « a « " в кольце вычетов по модулю " « n « " равен " « b;
+cout << "Обратный элемент к числу " << a << " в кольце вычетов по модулю " << n << " равен " << b;
 return 0;
 }
 b++;
 }
 
-cout « "Обратный элемент не найден";
+cout << "Обратный элемент не найден";
 return 0;
 }
